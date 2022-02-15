@@ -1,0 +1,18 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "testing_editable_dots"
+authors = [{name = "Andy Kluger", email = "andy@example.com"}]
+dynamic = ["version", "description"]
+dependencies = ["ruamel-yaml"]
+
+[project.urls]
+Home = "https://github.com/andydecleyre/testing_editable_dots"
+
+[project.optional-dependencies]
+dev = ["flit"]
+
+[project.scripts]
+test-with-editable-dots = "testing_editable_dots.main:main"
