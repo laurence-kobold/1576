@@ -1,3 +1,3 @@
 def main():
-    import ruamel.yaml
+    from pkg_resources import parse_version
     print("success")
